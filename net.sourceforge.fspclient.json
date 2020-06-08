@@ -23,7 +23,7 @@
 	{
 		"name": "fspclient",
 		"buildsystem": "simple",
-		"build-commands": [ "python3 /app/bin/scons prefix=/app mandir=/app/man install",
+		"build-commands": [ "python3 /app/bin/scons prefix=/app mandir=/tmp/man install",
 				    "mv metainfo.xml net.sourceforge.fspclient.metainfo.xml",
 				    "install -D -m644 -t /app/share/metainfo net.*.xml"
 		],
